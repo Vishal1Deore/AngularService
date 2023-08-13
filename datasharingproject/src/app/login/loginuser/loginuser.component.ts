@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyserviceService } from 'src/app/services/myservice.service';
 
 @Component({
   selector: 'app-loginuser',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./loginuser.component.css']
 })
 export class LoginuserComponent {
+
+constructor(public service:MyserviceService){
+
+}
+
+gettingDatafromservice(){
+  console.log(this.service.getData());
+}
 
 }

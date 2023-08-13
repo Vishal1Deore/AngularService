@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'datasharingproject';
+  whatToShow:number=0;
+  showData(val:number){
+    this.whatToShow=val;
+  }
 }
